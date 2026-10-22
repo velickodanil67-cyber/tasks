@@ -1,0 +1,8 @@
+all: main_11.o last_x_func.o
+	gcc main_11.o last_x_func.o -lm && rm -f *.o
+
+main_11.o: main_11.c
+	gcc -c main_11.c
+
+last_x_func.o: last_x_func.c
+	gcc -c last_x_func.c
